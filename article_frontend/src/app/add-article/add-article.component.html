@@ -16,9 +16,8 @@
         <option *ngFor="let depot of depots" [ngValue]="depot.id">{{depot.name}}</option>
     </select>
     <br>
-
     <br>
-        <button type="submit" [disabled]="articleFormGroup.invalid" class="btn btn-primary">Save</button>
+    <button type="submit" [disabled]="articleFormGroup.invalid" class="btn btn-primary">Save</button>
 </form>
 
 
