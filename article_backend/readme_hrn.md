@@ -2,7 +2,7 @@
 php bin/console make:entity article
 
 #Définir un champ comme entité
-choisir type: "relation" et donner le nom de l'entité correspondant
+choisir type: "relation" et donner le nom de l'entité correspondante
 
 #Créer la base de données
 php bin/console doctrine:database:create
