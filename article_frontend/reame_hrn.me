@@ -1,0 +1,46 @@
+#Générer un composant
+ng g c componentName
+
+#Générer un service
+ng g s serviceName
+
+#Installer bootstrap
+npm install --save bootstrap
+npm install --save bootstrap-icons
+
+#style.css
+@import "~bootstrap/dist/css/bootstrap.min.css"
+ou encore  dans angular.json
+sytle: node_modules/bootstrap/dist/css/bootstrap.min.css
+       node_modules/bootstrap-icons/font/bootstrap-icons.css
+
+script: node_modules/bootstrap/dist/js/bootstrap.bundle.js
+
+#Générer interface
+ng g interface model/article
+
+#Importer HttpClientModule dans app.module.ts
+import { HttpClientModule } from '@angular/common/http';
+
+imports:[
+    ...,
+    HttpClientModule,
+]
+
+#Utlisation de FormGroup:
+importer ReactiveFormsModule dans app.module.ts
+imports:[
+    ...,
+    ReactiveFormsModule,
+]
+
+#Close bootstrap modal form 
+@ViewChild('myModalClose') modalClose: any;
+Ajouter au bouton close: 
+#myModalClose
+Appeler la méthode save après soumission du formulaire:
+(click)="save()"
+Implementation de la méthode save:
+public save() {
+    this.modalClose.nativeElement.click();
+}
