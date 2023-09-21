@@ -11,8 +11,8 @@ import { DepotService } from '../service/depot.service';
   styleUrls: ['./article.component.css']
 })
 export class ArticleComponent implements OnInit{
-  articles: Article[] | undefined;
-  depots: Depot[] | undefined;
+  articles: Article[] =[];
+  depots: Depot[] = [];
   articleFormGroup: FormGroup;
 
   @ViewChild('myModalClose') modalClose: any;
