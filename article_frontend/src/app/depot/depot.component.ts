@@ -10,7 +10,7 @@ import { DepotService } from '../service/depot.service';
 })
 export class DepotComponent implements OnInit {
 
-  depots:Depot[] | undefined;
+  depots:Depot[] = [];
   depotFormGroup:FormGroup;
   private selectedArticleId : number=0;
   @ViewChild('myModalClose') modalClose: any;
